@@ -1,1 +1,3 @@
-alert('ayy')
+import initialPageLoad from "./page-load";
+
+initialPageLoad()
