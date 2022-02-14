@@ -1,0 +1,8 @@
+.contact-container {
+    align-self: stretch;
+    text-align: center;
+}
+.contact-content {
+    display: flex;
+    justify-content: space-around;
+}

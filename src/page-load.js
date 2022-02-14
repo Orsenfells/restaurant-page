@@ -1,8 +1,15 @@
 import './style.css'
+import './tab-style.css'
 import './pizza.jpg'
-const initialPageLoad = function() {
-    let page = document.querySelector('#content');
-    let heading = document.createElement('h1');
+import header from './header.js'
+
+
+const loadHomePage = function() {
+    let content = document.querySelector('#content');
+    content.appendChild(header())
+    let page = document.createElement('div')
+    page.className = 'home-page'
+    
     let hero = document.createElement('div');
     let orderContainer = document.createElement('div')
     let div = document.createElement('div')
@@ -20,18 +27,18 @@ const initialPageLoad = function() {
     h2.textContent = 'About Pizza Restaurant';
     p.textContent = 'Here at Pizza Restaurant we make our specialty pizza with the fresh organic ingrediants that our customers have come to expect and love!'
     
+    
     hero.appendChild(orderContainer)
     div.appendChild(deliveryButton)
     div.appendChild(carryOutButton)
     orderContainer.appendChild(div)
     restaurantInfo.appendChild(h2)
     restaurantInfo.appendChild(p)
-    heading.textContent = 'Pizza Restaurant';
 
-    page.appendChild(heading)
+    
     page.appendChild(hero)
     page.appendChild(restaurantInfo)
-    
+    content.appendChild(page)
 
 }
-export default initialPageLoad
+export default loadHomePage
