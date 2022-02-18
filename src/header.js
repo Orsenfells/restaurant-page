@@ -28,5 +28,8 @@ const header = function() {
     header.appendChild(tab())
     return header
 }
-
-export default header
+const loadHeader = function() {
+    let content = document.querySelector('.content')
+    content.appendChild(header())
+}
+export default loadHeader

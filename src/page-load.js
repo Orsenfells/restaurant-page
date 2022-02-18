@@ -1,12 +1,11 @@
 import './style.css'
 import './tab-style.css'
 import './pizza.jpg'
-import header from './header.js'
 
 
 const loadHomePage = function() {
     let content = document.querySelector('#content');
-    content.appendChild(header())
+
     let page = document.createElement('div')
     page.className = 'home-page'
     

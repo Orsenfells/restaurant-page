@@ -1,4 +1,4 @@
-import header from './header'
+
 import './contact.css'
 const contactInfo = function() {
     let container = document.createElement('div')
@@ -33,12 +33,12 @@ const contact = function() {
 }
 
 const loadContactPage = function() {
-    let page = document.querySelector('#content');
-    page.appendChild(header());
-    let contactTab = document.querySelector('.contact');
-    contactTab.className = 'active';
+    let content = document.querySelector('#content');
+    let page = document.createElement('div')
+    
     
     page.appendChild(contact())
+    content.appendChild(page)
 }
 
 export default loadContactPage
