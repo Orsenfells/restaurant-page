@@ -6,6 +6,7 @@ const loadAboutPage = function() {
     page.className = 'about-page' 
     let heading = document.createElement('h2')
     heading.textContent = 'About Us'
+
     page.appendChild(heading)
     content.appendChild(page)
 }

@@ -35,7 +35,7 @@ const contact = function() {
 const loadContactPage = function() {
     let content = document.querySelector('#content');
     let page = document.createElement('div')
-    
+    page.className = 'contact-page'
     
     page.appendChild(contact())
     content.appendChild(page)
