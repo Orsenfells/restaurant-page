@@ -6,7 +6,7 @@ module.exports = {
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
-        publicPath: "/restaurant-page/"
+        publicPath: "/restaurant-page/dist"
     },
     module: {
         rules: [
